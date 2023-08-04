@@ -24,13 +24,18 @@
   display: flex;
   float: right;
   padding: 34px;
-  /* margin-right: 344px; */
+}
+.active {
+  color: lightblue;
+  padding: 2rem;
 }
 .header {
   text-align: end;
   font-size: larger;
   font-weight: bold;
+  padding-top: 25px;
   font-style: oblique;
+  color: lightblue;
 }
 .section-post {
   font-size: large;
@@ -114,6 +119,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
 }
 .paragraph-footer {
   text-align: center;
@@ -123,12 +129,6 @@
 
 /* Blog */
 
-.header {
-  text-align: end;
-  font-size: larger;
-  font-weight: bold;
-  font-style: oblique;
-}
 .blog-heading {
   text-align: left;
   font-size: xxx-large;
@@ -168,12 +168,13 @@
 .image-works {
   width: 246px;
   height: 180px;
-  top: 1088px;
-  left: 146px;
-  border-radius: 6px;
+  margin-top: 1rem;
+  border-radius: 10px;
 }
 .icon-footerwork {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Works Detail */
@@ -207,9 +208,10 @@
   height: 460px;
   border-radius: 45px;
 }
-
 .icon-footerdetail {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer-pdetail {
   text-align: center;

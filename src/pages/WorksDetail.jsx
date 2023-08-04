@@ -4,6 +4,8 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ImagelistDetail from "../components/ImagelistDetail";
+import HeaderItem from "../components/Header"
+import Footer from "../components/Footer";
 const imagelist = [
   {
     image:
@@ -20,7 +22,7 @@ const imagelist = [
 const WorksDetail = () => {
   return (
     <div className="home-container">
-      <header className="header"> Blog Works Contact</header> 
+      <HeaderItem/> 
       <h1 className="workdetail-heading">
         Designing Dashboards with usability in mind
       </h1>
@@ -36,15 +38,7 @@ const WorksDetail = () => {
       {imagelist.map((list) => {
         return <ImagelistDetail image={list.image} />;
       })}
-      <section className="footer-workdetail">
-        <div className="icon-footerdetail">
-          <FacebookIcon />
-          <InstagramIcon />
-          <TwitterIcon />
-          <LinkedInIcon />
-        </div>
-        <p className="footer-pdetail">Copyright ©2020 All rights reserved </p>
-      </section>
+      <Footer/>
     </div>
   );
 };

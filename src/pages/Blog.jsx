@@ -4,7 +4,8 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
+import HeaderItem from "../components/Header";
+import Footer from "../components/Footer";
 const bloglist = [
   {
     heading: "UI Interactions of the week",
@@ -38,7 +39,7 @@ const bloglist = [
 const Blog = () => {
   return (
     <div className="home-container">
-      <header className="header"> Blog Works Contact</header>
+      <HeaderItem />
       <h1 className="blog-heading">Blog</h1>
       {bloglist.map((list) => {
         return (
@@ -50,19 +51,8 @@ const Blog = () => {
           />
         );
       })}
-      <section className="footer-section">
-        
-        <div >
-          <FacebookIcon />
-          <InstagramIcon />
-          <TwitterIcon />
-          <LinkedInIcon />
-        </div>
-        
-      </section>
-      <p className="p-footer">Copyright ©2020 All rights reserved </p>
+      <Footer />
     </div>
-    
   );
 };
 

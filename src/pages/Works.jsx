@@ -4,6 +4,8 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import HeaderItem from "../components/Header"
+import Footer from "../components/Footer";
 const Worklist = [
   {
     heading: "Designing Dashboards",
@@ -45,7 +47,7 @@ const Worklist = [
 const Works = () => {
   return (
     <div className="home-container">
-      <header className="header"> Blog Works Contact</header>
+      <HeaderItem/>
       <h1 className="work-heading">Works</h1>
       {Worklist.map((list) => {
         return (
@@ -58,15 +60,7 @@ const Works = () => {
           />
         );
       })}
-      <section className="footer-works">
-        <div className="icon-footerwork">
-          <FacebookIcon />
-          <InstagramIcon />
-          <TwitterIcon />
-          <LinkedInIcon />
-        </div>
-        <p className="paragraph-footer">Copyright ©2020 All rights reserved </p>
-      </section>
+      <Footer/>
     </div>
   );
 };

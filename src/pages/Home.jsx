@@ -1,10 +1,8 @@
 import React from "react";
 import Postcard from "../components/Postcard";
 import WorklistItem from "../components/WorklistItem";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import HeaderItem from "../components/Header";
+import Footer from "../components/Footer";
 const postList = [
   {
     heading: "Making a design system from scratch",
@@ -30,7 +28,7 @@ const Worklist = [
     amet sint. Velit officia consequat duis enim velit mollit.
     Exercitation veniam consequat sunt nostrud amet.`,
     image:
-      "https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/7ENP6HRLDBEGROQ7MMAMI5FPRA.png",
+      "/assets/dashboard-image.png",
   },
   {
     heading: "Vibrant Portraits of 2020",
@@ -38,8 +36,7 @@ const Worklist = [
     description: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do
     amet sint. Velit officia consequat duis enim velit mollit.
     Exercitation veniam consequat sunt nostrud amet.`,
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTam4Wv0nuDyHD_8YeT35g1d06NOHJ-swhOw&usqp=CAU",
+    image: "/assets/girl-image2.png",
   },
   {
     heading: "36 Days of Malayalam type",
@@ -48,18 +45,14 @@ const Worklist = [
     amet sint. Velit officia consequat duis enim velit mollit.
     Exercitation veniam consequat sunt nostrud amet.`,
     image:
-      "https://1fid.com/wp-content/uploads/2022/03/a-name-stylish-wallpaper-image-6-1024x1022.jpg",
+      "/assets/girl-image.png",
   },
 ];
 
 const Home = () => {
   return (
     <div className="home-container">
-      <section className="header">
-        <header>
-          <span>Works Blog Contact</span>
-        </header>
-      </section>
+      <HeaderItem />
       <img
         className="image"
         src="https://onlinepngtools.com/images/examples-onlinepngtools/man-on-the-mountain-edge-avatar.png"
@@ -105,16 +98,7 @@ const Home = () => {
           );
         })}
       </section>
-      <section className="footer">
-        <div></div>
-        <div className="icon-footer">
-          <FacebookIcon />
-          <InstagramIcon />
-          <TwitterIcon />
-          <LinkedInIcon />
-        </div>
-        <p className="paragraph-footer">Copyright ©2020 All rights reserved </p>
-      </section>
+      <Footer />
     </div>
   );
 };
